@@ -1,5 +1,6 @@
-import { FunctionComponent, useMemo } from "react";
-import CSS, { Property } from "csstype";
+import { FunctionComponent } from "react";
+import { Property } from "csstype";
+import styled from "styled-components";
 
 type NioWalletContainerType = {
   walletBalance?: string;
@@ -13,6 +14,55 @@ type NioWalletContainerType = {
   propWidth?: Property.Width;
 };
 
+const Niowallet = styled.div`
+  position: relative;
+  letter-spacing: 0.04em;
+`;
+const Div = styled.div<{ propLetterSpacing?: Property.LetterSpacing }>`
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  letter-spacing: ${(p) => p.propLetterSpacing};
+`;
+const Nio = styled.div<{ propLetterSpacing1?: Property.LetterSpacing }>`
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  color: #777e8a;
+  letter-spacing: ${(p) => p.propLetterSpacing1};
+`;
+const Parent1 = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 17px;
+`;
+const BitcoinIcon = styled.img<{ propWidth?: Property.Width }>`
+  position: relative;
+  width: 20px;
+  height: 20px;
+  width: ${(p) => p.propWidth};
+`;
+const NioWalletRoot = styled.div`
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 37px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: left;
+  font-size: 11px;
+  color: #0d1118;
+  font-family: Tomorrow;
+  @media screen and (max-width: 500px) {
+    flex: unset;
+    align-self: stretch;
+  }
+`;
 const NioWalletContainer: FunctionComponent<NioWalletContainerType> = ({
   walletBalance,
   walletBalanceNio,
@@ -22,48 +72,15 @@ const NioWalletContainer: FunctionComponent<NioWalletContainerType> = ({
   propLetterSpacing1,
   propWidth,
 }) => {
-  const divStyle: CSS.Properties = useMemo(() => {
-    return {
-      letterSpacing: propLetterSpacing,
-    };
-  }, [propLetterSpacing]);
-
-  const nIOStyle: CSS.Properties = useMemo(() => {
-    return {
-      letterSpacing: propLetterSpacing1,
-    };
-  }, [propLetterSpacing1]);
-
-  const bitcoinIconStyle: CSS.Properties = useMemo(() => {
-    return {
-      width: propWidth,
-    };
-  }, [propWidth]);
-
   return (
-    <div className="flex-1 bg-white flex flex-col py-9 px-[37px] items-center justify-center gap-[12px] text-left text-2xs text-black1 font-tomorrow mq500small:flex-[unset] mq500small:self-stretch">
-      <div className="relative tracking-[0.04em]">{walletBalance}</div>
-      <div className="flex flex-row items-start justify-start gap-[5px] text-mid">
-        <div
-          className="relative tracking-[-0.02em] font-medium"
-          style={divStyle}
-        >
-          {walletBalanceNio}
-        </div>
-        <div
-          className="relative tracking-[-0.02em] font-medium text-text-color"
-          style={nIOStyle}
-        >
-          {walletBalanceEth}
-        </div>
-      </div>
-      <img
-        className="relative w-5 h-5"
-        alt=""
-        src={walletTransactionIdNio}
-        style={bitcoinIconStyle}
-      />
-    </div>
+    <NioWalletRoot>
+      <Niowallet>{walletBalance}</Niowallet>
+      <Parent1>
+        <Div propLetterSpacing={propLetterSpacing}>{walletBalanceNio}</Div>
+        <Nio propLetterSpacing1={propLetterSpacing1}>{walletBalanceEth}</Nio>
+      </Parent1>
+      <BitcoinIcon alt="" src={walletTransactionIdNio} propWidth={propWidth} />
+    </NioWalletRoot>
   );
 };
 

@@ -1,7 +1,98 @@
 import { FunctionComponent, useCallback } from "react";
+import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import FoodpandaContainer from "../components/FoodpandaContainer";
 
+const Search = styled.div`
+  align-self: stretch;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+`;
+const SearchTerm = styled.input`
+  border: none;
+  font-family: Tomorrow;
+  font-size: 12px;
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 15px;
+  align-items: flex-start;
+  justify-content: flex-start;
+`;
+const SearchIcon = styled.img`
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+`;
+const Button = styled.button`
+  cursor: pointer;
+  border: none;
+  padding: 12px 11px;
+  background-color: #4f46ba;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #171060;
+  }
+`;
+const SearchTermParent = styled.div`
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+`;
+const SearchSection = styled.div`
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 26px;
+  @media screen and (max-width: 1050px) {
+    width: 100%;
+  }
+`;
+const Back = styled.button`
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: 20px;
+  font-family: Tomorrow;
+  color: #000;
+  text-align: left;
+  display: inline-block;
+`;
+const SearchPageRoot = styled.div`
+  position: relative;
+  background-color: #f3f5fa;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 67px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 37px;
+  text-align: left;
+  font-size: 21px;
+  color: #151630;
+  font-family: Tomorrow;
+  @media screen and (max-width: 600px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+`;
 const SearchPage: FunctionComponent = () => {
   const navigate = useNavigate();
 
@@ -14,37 +105,19 @@ const SearchPage: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className="relative bg-ghostwhite w-full flex flex-col py-[50px] px-[67px] box-border items-start justify-start gap-[37px] text-left text-2xl text-text-21 font-tomorrow sm:pl-5 sm:pr-5 sm:box-border">
-      <div className="self-stretch flex flex-col items-start justify-start gap-[26px] md:w-full">
-        <div className="self-stretch relative uppercase font-medium">
-          Search
-        </div>
-        <div className="self-stretch flex flex-row items-start justify-start gap-[20px]">
-          <input
-            className="[border:none] font-tomorrow text-xs bg-white flex-1 flex flex-row py-4 px-[15px] items-start justify-start"
-            type="text"
-            placeholder="Enter Search Term"
-          />
-          <button
-            className="cursor-pointer [border:none] py-3 px-[11px] bg-pallet-3-primary flex flex-row items-center justify-center hover:bg-midnightblue"
-            onClick={onButtonClick}
-          >
-            <img
-              className="relative w-6 h-6 overflow-hidden shrink-0"
-              alt=""
-              src="/search2.svg"
-            />
-          </button>
-        </div>
-      </div>
+    <SearchPageRoot>
+      <SearchSection>
+        <Search>Search</Search>
+        <SearchTermParent>
+          <SearchTerm type="text" placeholder="Enter Search Term" />
+          <Button onClick={onButtonClick}>
+            <SearchIcon alt="" src="/search2.svg" />
+          </Button>
+        </SearchTermParent>
+      </SearchSection>
       <FoodpandaContainer />
-      <button
-        className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-xl font-tomorrow text-black-200 text-left inline-block"
-        onClick={onBackClick}
-      >
-        ← Back
-      </button>
-    </div>
+      <Back onClick={onBackClick}>← Back</Back>
+    </SearchPageRoot>
   );
 };
 

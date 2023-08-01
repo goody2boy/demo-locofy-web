@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
-import "./global.css";
+import GlobalStyles from "./global";
 
 const chakraTheme = extendTheme({
   styles: { global: { img: { maxWidth: "unset" } } },
@@ -37,6 +37,7 @@ root.render(
   <BrowserRouter>
     <CacheProvider value={emotionCache}>
       <ChakraProvider theme={chakraTheme}>
+        <GlobalStyles />
         <App />
       </ChakraProvider>
     </CacheProvider>

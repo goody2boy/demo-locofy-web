@@ -1,80 +1,260 @@
 import { FunctionComponent } from "react";
+import styled from "styled-components";
 import ActiveDeviceContainer from "./ActiveDeviceContainer";
 
+const LogoIcon = styled.img`
+  position: relative;
+  width: 30px;
+  height: 29.7px;
+`;
+const Mineshine = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 106px;
+  height: 21.78px;
+  flex-shrink: 0;
+`;
+const LogoParent = styled.div`
+  height: 29.45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 22px;
+`;
+const Home1Icon = styled.img`
+  position: relative;
+  width: 17.64px;
+  height: 16.69px;
+`;
+const Dashboard = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 95px;
+  height: 21.59px;
+  flex-shrink: 0;
+`;
+const Home1Parent = styled.div`
+  width: 134.78px;
+  height: 21.59px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 22px;
+  color: #4e36fc;
+`;
+const Wallet2Icon = styled.img`
+  position: relative;
+  width: 20.27px;
+  height: 16.69px;
+`;
+const Wellet = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 21.59px;
+  flex-shrink: 0;
+`;
+const Wallet2Parent = styled.div`
+  width: 93.1px;
+  height: 21.59px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+`;
+const FrameChild = styled.img`
+  position: relative;
+  width: 19.99px;
+  height: 16.85px;
+`;
+const Statistics = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 21.59px;
+  flex-shrink: 0;
+`;
+const GroupParent = styled.div`
+  width: 120.32px;
+  height: 21.59px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+`;
+const VectorIcon = styled.img`
+  position: relative;
+  width: 19.72px;
+  height: 19.63px;
+`;
+const Transactions = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 111px;
+  height: 21.59px;
+  flex-shrink: 0;
+`;
+const VectorParent = styled.div`
+  width: 151.82px;
+  height: 21.59px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+`;
+const StoreIcon = styled.img`
+  position: relative;
+  width: 19.16px;
+  height: 16.69px;
+`;
+const Exchange = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 86px;
+  height: 21.59px;
+  flex-shrink: 0;
+`;
+const StoreParent = styled.div`
+  width: 126.54px;
+  height: 21.59px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+`;
+const VectorIcon1 = styled.img`
+  position: relative;
+  border-radius: 1px;
+  width: 19.72px;
+  height: 15.72px;
+`;
+const News = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 49px;
+  height: 21.59px;
+  flex-shrink: 0;
+`;
+const VectorGroup = styled.div`
+  width: 89.82px;
+  height: 21.59px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0.09995269775390625px 0px 4.76837158203125e-7px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+`;
+const FrameParent = styled.div`
+  width: 152.1px;
+  height: 322.04px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 1.3173880577087402px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 37px;
+  color: #8a8b9f;
+`;
+const ActiveDevice = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 102px;
+  height: 18.65px;
+  flex-shrink: 0;
+`;
+const Frame = styled.div`
+  width: 209.19px;
+  height: 153.63px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0.988922119140625px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 27px;
+  font-size: 12px;
+  color: #5d4e7b;
+`;
+const ActiveDevices = styled.div`
+  align-self: stretch;
+  height: 198.58px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 26px;
+  font-size: 16px;
+  color: #0d1118;
+`;
+const SideBarChild = styled.img`
+  position: relative;
+  width: 46px;
+  height: 45.15px;
+  object-fit: cover;
+`;
+const SideBarRoot = styled.div`
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 53px 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 93px;
+  text-align: left;
+  font-size: 18px;
+  color: #4e36fc;
+  font-family: Tomorrow;
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
+`;
 const MineShineContainer: FunctionComponent = () => {
   return (
-    <div className="bg-white flex flex-col py-[53px] px-8 items-start justify-start gap-[93px] text-left text-lg text-purple font-tomorrow lg:hidden">
-      <div className="h-[29.45px] flex flex-row items-center justify-start gap-[22px]">
-        <img className="relative w-[30px] h-[29.7px]" alt="" src="/logo.svg" />
-        <div className="relative inline-block w-[106px] h-[21.78px] shrink-0">{`Mine&Shine`}</div>
-      </div>
-      <div className="w-[152.1px] h-[322.04px] flex flex-col py-0 pr-0 pl-[1.3173880577087402px] box-border items-start justify-start gap-[37px] text-lightslategray">
-        <div className="w-[134.78px] h-[21.59px] flex flex-row items-start justify-start gap-[22px] text-purple">
-          <img
-            className="relative w-[17.64px] h-[16.69px]"
-            alt=""
-            src="/home-1.svg"
-          />
-          <div className="relative inline-block w-[95px] h-[21.59px] shrink-0">
-            Dashboard
-          </div>
-        </div>
-        <div className="w-[93.1px] h-[21.59px] flex flex-row items-center justify-start gap-[20px]">
-          <img
-            className="relative w-[20.27px] h-[16.69px]"
-            alt=""
-            src="/wallet-2.svg"
-          />
-          <div className="relative inline-block w-[52px] h-[21.59px] shrink-0">
-            Wellet
-          </div>
-        </div>
-        <div className="w-[120.32px] h-[21.59px] flex flex-row items-center justify-start gap-[20px]">
-          <img
-            className="relative w-[19.99px] h-[16.85px]"
-            alt=""
-            src="/group-1.svg"
-          />
-          <div className="relative inline-block w-20 h-[21.59px] shrink-0">
-            Statistics
-          </div>
-        </div>
-        <div className="w-[151.82px] h-[21.59px] flex flex-row items-center justify-start gap-[20px]">
-          <img
-            className="relative w-[19.72px] h-[19.63px]"
-            alt=""
-            src="/vector.svg"
-          />
-          <div className="relative inline-block w-[111px] h-[21.59px] shrink-0">
-            Transactions
-          </div>
-        </div>
-        <div className="w-[126.54px] h-[21.59px] flex flex-row items-center justify-start gap-[21px]">
-          <img
-            className="relative w-[19.16px] h-[16.69px]"
-            alt=""
-            src="/store.svg"
-          />
-          <div className="relative inline-block w-[86px] h-[21.59px] shrink-0">
-            Exchange
-          </div>
-        </div>
-        <div className="w-[89.82px] h-[21.59px] flex flex-row py-0 pr-[0.09995269775390625px] pl-[4.76837158203125e-7px] box-border items-center justify-start gap-[21px]">
-          <img
-            className="relative rounded-12xs w-[19.72px] h-[15.72px]"
-            alt=""
-            src="/vector1.svg"
-          />
-          <div className="relative inline-block w-[49px] h-[21.59px] shrink-0">
-            News
-          </div>
-        </div>
-      </div>
-      <div className="self-stretch h-[198.58px] flex flex-col items-start justify-start gap-[26px] text-base text-black1">
-        <div className="relative inline-block w-[102px] h-[18.65px] shrink-0">
-          Active device
-        </div>
-        <div className="w-[209.19px] h-[153.63px] overflow-hidden shrink-0 flex flex-col pt-0 px-0 pb-[0.988922119140625px] box-border items-center justify-start gap-[27px] text-xs text-st1">
+    <SideBarRoot>
+      <LogoParent>
+        <LogoIcon alt="" src="/logo.svg" />
+        <Mineshine>{`Mine&Shine`}</Mineshine>
+      </LogoParent>
+      <FrameParent>
+        <Home1Parent>
+          <Home1Icon alt="" src="/home-1.svg" />
+          <Dashboard>Dashboard</Dashboard>
+        </Home1Parent>
+        <Wallet2Parent>
+          <Wallet2Icon alt="" src="/wallet-2.svg" />
+          <Wellet>Wellet</Wellet>
+        </Wallet2Parent>
+        <GroupParent>
+          <FrameChild alt="" src="/group-1.svg" />
+          <Statistics>Statistics</Statistics>
+        </GroupParent>
+        <VectorParent>
+          <VectorIcon alt="" src="/vector.svg" />
+          <Transactions>Transactions</Transactions>
+        </VectorParent>
+        <StoreParent>
+          <StoreIcon alt="" src="/store.svg" />
+          <Exchange>Exchange</Exchange>
+        </StoreParent>
+        <VectorGroup>
+          <VectorIcon1 alt="" src="/vector1.svg" />
+          <News>News</News>
+        </VectorGroup>
+      </FrameParent>
+      <ActiveDevices>
+        <ActiveDevice>Active device</ActiveDevice>
+        <Frame>
           <ActiveDeviceContainer
             deviceDimensions="/iphone.svg"
             productDimensions="/dots.svg"
@@ -87,14 +267,10 @@ const MineShineContainer: FunctionComponent = () => {
             propWidth="84px"
             propWidth1="84px"
           />
-        </div>
-      </div>
-      <img
-        className="relative w-[46px] h-[45.15px] object-cover"
-        alt=""
-        src="/rectangle-643@2x.png"
-      />
-    </div>
+        </Frame>
+      </ActiveDevices>
+      <SideBarChild alt="" src="/rectangle-643@2x.png" />
+    </SideBarRoot>
   );
 };
 
