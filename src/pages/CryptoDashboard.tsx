@@ -1,6 +1,8 @@
 import { FunctionComponent, useCallback } from "react";
 import { Switch } from "@chakra-ui/react";
+import MineShineContainer from "../components/MineShineContainer";
 import { useNavigate } from "react-router-dom";
+import ContainerView from "../components/ContainerView";
 
 const CryptoDashboard: FunctionComponent = () => {
   const navigate = useNavigate();
@@ -10,135 +12,10 @@ const CryptoDashboard: FunctionComponent = () => {
   }, [navigate]);
 
   return (
-    <div className="relative bg-ghostwhite w-full flex flex-row items-start justify-start gap-[1px] text-left text-lg text-purple font-tomorrow">
-      <div className="bg-white flex flex-col py-[53px] px-8 items-start justify-start gap-[93px] lg:hidden">
-        <div className="h-[29.45px] flex flex-row items-center justify-start gap-[22px]">
-          <img
-            className="relative w-[30px] h-[29.7px]"
-            alt=""
-            src="/logo.svg"
-          />
-          <div className="relative inline-block w-[106px] h-[21.78px] shrink-0">{`Mine&Shine`}</div>
-        </div>
-        <div className="w-[152.1px] h-[322.04px] flex flex-col py-0 pr-0 pl-[1.3173880577087402px] box-border items-start justify-start gap-[37px] text-lightslategray">
-          <div className="w-[134.78px] h-[21.59px] flex flex-row items-start justify-start gap-[22px] text-purple">
-            <img
-              className="relative w-[17.64px] h-[16.69px]"
-              alt=""
-              src="/home-1.svg"
-            />
-            <div className="relative inline-block w-[95px] h-[21.59px] shrink-0">
-              Dashboard
-            </div>
-          </div>
-          <div className="w-[93.1px] h-[21.59px] flex flex-row items-center justify-start gap-[20px]">
-            <img
-              className="relative w-[20.27px] h-[16.69px]"
-              alt=""
-              src="/wallet-2.svg"
-            />
-            <div className="relative inline-block w-[52px] h-[21.59px] shrink-0">
-              Wellet
-            </div>
-          </div>
-          <div className="w-[120.32px] h-[21.59px] flex flex-row items-center justify-start gap-[20px]">
-            <img
-              className="relative w-[19.99px] h-[16.85px]"
-              alt=""
-              src="/group-1.svg"
-            />
-            <div className="relative inline-block w-20 h-[21.59px] shrink-0">
-              Statistics
-            </div>
-          </div>
-          <div className="w-[151.82px] h-[21.59px] flex flex-row items-center justify-start gap-[20px]">
-            <img
-              className="relative w-[19.72px] h-[19.63px]"
-              alt=""
-              src="/vector.svg"
-            />
-            <div className="relative inline-block w-[111px] h-[21.59px] shrink-0">
-              Transactions
-            </div>
-          </div>
-          <div className="w-[126.54px] h-[21.59px] flex flex-row items-center justify-start gap-[21px]">
-            <img
-              className="relative w-[19.16px] h-[16.69px]"
-              alt=""
-              src="/store.svg"
-            />
-            <div className="relative inline-block w-[86px] h-[21.59px] shrink-0">
-              Exchange
-            </div>
-          </div>
-          <div className="w-[89.82px] h-[21.59px] flex flex-row py-0 pr-[0.09995269775390625px] pl-[4.76837158203125e-7px] box-border items-center justify-start gap-[21px]">
-            <img
-              className="relative rounded-[1px] w-[19.72px] h-[15.72px]"
-              alt=""
-              src="/vector1.svg"
-            />
-            <div className="relative inline-block w-[49px] h-[21.59px] shrink-0">
-              News
-            </div>
-          </div>
-        </div>
-        <div className="self-stretch h-[198.58px] flex flex-col items-start justify-start gap-[26px] text-base text-black1">
-          <div className="relative inline-block w-[102px] h-[18.65px] shrink-0">
-            Active device
-          </div>
-          <div className="w-[209.19px] h-[153.63px] overflow-hidden shrink-0 flex flex-col pt-0 px-0 pb-[0.988922119140625px] box-border items-center justify-start gap-[27px] text-xs text-st1">
-            <div className="relative w-[209.19px] h-[62.82px]">
-              <img
-                className="absolute top-[0px] left-[0px] w-16 h-[62.82px]"
-                alt=""
-                src="/iphone.svg"
-              />
-              <img
-                className="absolute top-[24.8px] left-[206.19px] w-[3px] h-[16.69px]"
-                alt=""
-                src="/dots.svg"
-              />
-              <div className="absolute top-[14.93px] left-[79.64px] w-[89px] h-[35.35px] overflow-hidden">
-                <div className="absolute top-[0px] left-[0px] font-medium inline-block w-[89px] h-[13.74px]">
-                  Iphone 6s Plus
-                </div>
-                <div className="absolute top-[21.6px] left-[15px] inline-block w-9 h-[13.74px]">
-                  Active
-                </div>
-                <div className="absolute top-[26.47px] left-[0.72px] rounded-[50%] bg-green w-[6.5px] h-[6.38px]" />
-              </div>
-            </div>
-            <div className="relative w-[209.19px] h-[62.82px]">
-              <img
-                className="absolute top-[0px] left-[0px] w-16 h-[62.82px]"
-                alt=""
-                src="/macbook.svg"
-              />
-              <img
-                className="absolute top-[24.3px] left-[206.19px] w-[3px] h-[16.69px]"
-                alt=""
-                src="/dots1.svg"
-              />
-              <div className="absolute top-[13.99px] left-[79.64px] w-[84px] h-[35.35px] overflow-hidden">
-                <div className="absolute top-[0px] left-[0px] font-medium inline-block w-[84px] h-[13.74px]">
-                  Macbook 2017
-                </div>
-                <div className="absolute top-[21.6px] left-[15px] inline-block w-9 h-[13.74px]">
-                  Active
-                </div>
-                <div className="absolute top-[26.47px] left-[0.72px] rounded-[50%] bg-green w-[6.5px] h-[6.38px]" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <img
-          className="relative w-[46px] h-[45.15px] object-cover"
-          alt=""
-          src="/rectangle-643@2x.png"
-        />
-      </div>
-      <div className="flex-1 flex flex-col py-11 px-[54px] items-start justify-start gap-[51px] text-xl text-black1 sm:pl-5 sm:pr-5 sm:box-border">
-        <div className="self-stretch flex flex-row items-start justify-start gap-[30px] text-2xl text-text-21 md:flex-col">
+    <div className="relative bg-ghostwhite w-full flex flex-row items-start justify-start gap-[1px] text-left text-2xl text-text-21 font-tomorrow">
+      <MineShineContainer />
+      <div className="flex-1 flex flex-col py-11 px-[54px] items-start justify-start gap-[51px] sm:pl-5 sm:pr-5 sm:box-border">
+        <div className="self-stretch flex flex-row items-start justify-start gap-[30px] md:flex-col">
           <div className="flex-1 flex flex-col items-start justify-start gap-[25px] md:pr-0 md:box-border md:flex-[unset] md:self-stretch sm:w-full">
             <div className="self-stretch relative uppercase font-medium">
               Welcome To Dashboard
@@ -218,71 +95,8 @@ const CryptoDashboard: FunctionComponent = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-row items-end justify-start gap-[41px] md:flex-col">
-          <div className="w-[406px] flex flex-col items-start justify-start gap-[24px] md:w-full">
-            <div className="self-stretch relative">Overview</div>
-            <div className="self-stretch bg-pallet-3-primary flex flex-row py-[39px] px-10 items-center justify-start relative gap-[10px] text-xs text-white mq500small:pl-5 mq500small:pr-5 mq500small:box-border mq500small:justify-center">
-              <div className="flex flex-col items-center justify-center gap-[25px] z-[0]">
-                <img
-                  className="relative w-[205.25px] h-[306px] hidden mq500small:flex"
-                  alt=""
-                  src="/frame-2221.svg"
-                />
-                <div className="relative">Available balance in USD</div>
-                <div className="relative text-[30px]">134,510.15</div>
-                <div className="w-[159px] flex flex-row items-center justify-between">
-                  <div className="w-[75px] h-[52.58px] flex flex-col pt-[0.5821533203125px] px-0 pb-0 box-border items-start justify-end gap-[12px]">
-                    <div className="relative">Transactions</div>
-                    <div className="relative text-3xl">34,405</div>
-                  </div>
-                  <div className="w-[42px] h-[52.58px] flex flex-col items-start justify-start gap-[12px]">
-                    <div className="relative">Wallets</div>
-                    <div className="relative text-3xl">23</div>
-                  </div>
-                </div>
-                <div className="relative">Last activity at 21 May, 2021</div>
-              </div>
-              <img
-                className="absolute my-0 mx-[!important] top-[calc(50%_-_152.79px)] right-[-0.25px] w-[205.25px] h-[306px] z-[1] mq500small:hidden"
-                alt=""
-                src="/frame-2221.svg"
-              />
-            </div>
-            <div className="self-stretch flex flex-row items-start justify-start gap-[25px] text-2xs mq500small:flex-col">
-              <div className="flex-1 bg-white flex flex-col py-9 px-[37px] items-center justify-center gap-[12px] mq500small:flex-[unset] mq500small:self-stretch">
-                <div className="relative tracking-[0.04em]">NioWallet</div>
-                <div className="flex flex-row items-start justify-start gap-[5px] text-mid">
-                  <div className="relative tracking-[-0.02em] font-medium">
-                    4.434953
-                  </div>
-                  <div className="relative tracking-[-0.02em] font-medium text-text-color">
-                    NIO
-                  </div>
-                </div>
-                <img
-                  className="relative w-5 h-5"
-                  alt=""
-                  src="/bitcoin-icon.svg"
-                />
-              </div>
-              <div className="flex-1 bg-white flex flex-col p-[35px] items-center justify-center gap-[12px] mq500small:flex-[unset] mq500small:self-stretch">
-                <div className="relative tracking-[0.04em]">
-                  Ethereum Wallet
-                </div>
-                <div className="flex flex-row items-start justify-start gap-[4px] text-mid">
-                  <div className="relative font-medium">0.000298</div>
-                  <div className="relative font-medium text-text-color">
-                    ETH
-                  </div>
-                </div>
-                <img
-                  className="relative w-[12.67px] h-[20.45px]"
-                  alt=""
-                  src="/icon.svg"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="flex-1 flex flex-row items-start justify-start gap-[38px] text-2xl text-text-21 md:flex-row md:flex-[unset] md:self-stretch sm:flex-col">
+          <ContainerView />
+          <div className="flex-1 flex flex-row items-start justify-start gap-[38px] md:flex-row md:flex-[unset] md:self-stretch sm:flex-col">
             <div className="w-[199px] flex flex-col items-start justify-start gap-[20px] sm:w-full">
               <div className="self-stretch bg-lavender-100 flex flex-col py-[22px] px-[30px] items-center justify-center">
                 <div className="relative w-[139px] h-[51px]">
@@ -472,7 +286,7 @@ const CryptoDashboard: FunctionComponent = () => {
             </div>
           </div>
         </div>
-        <div className="self-stretch flex flex-row items-start justify-start gap-[31px] md:flex-col">
+        <div className="self-stretch flex flex-row items-start justify-start gap-[31px] text-xl text-black1 md:flex-col">
           <div className="flex-1 flex flex-col items-start justify-start gap-[28px] md:flex-[unset] md:self-stretch">
             <div className="self-stretch relative">Security</div>
             <div className="self-stretch flex flex-row items-start justify-start gap-[23px] text-base text-st1 mq500small:flex-col">
