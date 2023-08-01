@@ -1,292 +1,87 @@
 import { FunctionComponent } from "react";
-import styled from "styled-components";
-
-const Image29Icon = styled.img`
-  position: relative;
-  border-radius: 8px;
-  width: 53px;
-  height: 53px;
-  object-fit: cover;
-`;
-const Image29Wrapper = styled.div`
-  border-radius: 8px;
-  background-color: #d70f64;
-  display: flex;
-  flex-direction: row;
-  padding: 2px;
-  align-items: center;
-  justify-content: center;
-`;
-const Foodpanda = styled.div`
-  position: relative;
-`;
-const Meal = styled.div`
-  position: relative;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  font-family: Poppins;
-  color: #838690;
-`;
-const FoodpandaParent = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 4px;
-`;
-const FrameParent = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
-`;
-const Div = styled.div`
-  position: relative;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-`;
-const Parent1 = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 5px;
-  text-align: right;
-  color: #f32323;
-`;
-const FoodPanda = styled.div`
-  align-self: stretch;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  padding: 10px 16px;
-  align-items: center;
-  justify-content: space-between;
-`;
-const VectorIcon = styled.img`
-  position: relative;
-  width: 30px;
-  height: 30px;
-`;
-const VectorWrapper = styled.div`
-  border-radius: 8px;
-  background-color: #ff0000;
-  display: flex;
-  flex-direction: row;
-  padding: 13px;
-  align-items: center;
-  justify-content: center;
-`;
-const FrameGroup = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 13px;
-`;
-const FrameChild = styled.div`
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
-  border-radius: 8px;
-  background-color: #3b5998;
-`;
-const FrameItem = styled.img`
-  position: absolute;
-  height: 81.08%;
-  width: 42.11%;
-  top: 18.92%;
-  right: 22.81%;
-  bottom: 0%;
-  left: 35.09%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-`;
-const RectangleParent = styled.div`
-  position: relative;
-  width: 57px;
-  height: 57px;
-`;
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 5px;
-  text-align: right;
-  color: #34c98e;
-`;
-const Image20Icon = styled.img`
-  position: relative;
-  border-radius: 8px;
-  width: 46px;
-  height: 44px;
-  object-fit: cover;
-`;
-const Image20Wrapper = styled.div`
-  border-radius: 8px;
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  padding: 6px 5px;
-  align-items: center;
-  justify-content: center;
-`;
-const FrameInner = styled.img`
-  position: relative;
-  width: 30.07px;
-  height: 19.38px;
-`;
-const GroupWrapper = styled.div`
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: 8px;
-  background: linear-gradient(180deg, #0075cd, #002b67);
-  display: flex;
-  flex-direction: column;
-  padding: 19px 13px;
-  align-items: center;
-  justify-content: center;
-`;
-const FrameWrapper = styled.div`
-  position: relative;
-  width: 56.07px;
-  height: 57.38px;
-`;
-const CitiBank1 = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 71.6px;
-`;
-const Credited = styled.div`
-  position: relative;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  font-family: Poppins;
-  color: #838690;
-  display: flex;
-  align-items: center;
-  width: 63.05px;
-`;
-const GroupParent = styled.div`
-  width: 145.34px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 18px;
-`;
-const Parent2 = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 7px;
-  text-align: right;
-  color: #f32323;
-`;
-const CompanySectionRoot = styled.div`
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 15px;
-  text-align: left;
-  font-size: 16px;
-  color: #1e253a;
-  font-family: Tomorrow;
-`;
+import "./FoodpandaContainer.css";
 const FoodpandaContainer: FunctionComponent = () => {
   return (
-    <CompanySectionRoot>
-      <FoodPanda>
-        <FrameParent>
-          <Image29Wrapper>
-            <Image29Icon alt="" src="/image-291@2x.png" />
-          </Image29Wrapper>
-          <FoodpandaParent>
-            <Foodpanda>Foodpanda</Foodpanda>
-            <Meal>Meal</Meal>
-          </FoodpandaParent>
-        </FrameParent>
-        <Parent1>
-          <Div>- $15.85</Div>
-          <Meal>10:00 PM</Meal>
-        </Parent1>
-      </FoodPanda>
-      <FoodPanda>
-        <FrameGroup>
-          <VectorWrapper>
-            <VectorIcon alt="" src="/vector4.svg" />
-          </VectorWrapper>
-          <FoodpandaParent>
-            <Foodpanda>Vodafone</Foodpanda>
-            <Meal>Phone</Meal>
-          </FoodpandaParent>
-        </FrameGroup>
-        <Parent1>
-          <Div>- $58</Div>
-          <Meal>04:13 PM</Meal>
-        </Parent1>
-      </FoodPanda>
-      <FoodPanda>
-        <FrameParent>
-          <RectangleParent>
-            <FrameChild />
-            <FrameItem alt="" src="/group-43.svg" />
-          </RectangleParent>
-          <FoodpandaParent>
-            <Foodpanda>Facebook</Foodpanda>
-            <Meal>Salary</Meal>
-          </FoodpandaParent>
-        </FrameParent>
-        <Container>
-          <Div>+ $7000</Div>
-          <Meal>11:45 AM</Meal>
-        </Container>
-      </FoodPanda>
-      <FoodPanda>
-        <FrameGroup>
-          <Image20Wrapper>
-            <Image20Icon alt="" src="/image-201@2x.png" />
-          </Image20Wrapper>
-          <FoodpandaParent>
-            <Foodpanda>Uber Premier</Foodpanda>
-            <Meal>Transport</Meal>
-          </FoodpandaParent>
-        </FrameGroup>
-        <Parent1>
-          <Div>- $8.75</Div>
-          <Meal>8:30 AM</Meal>
-        </Parent1>
-      </FoodPanda>
-      <FoodPanda>
-        <GroupParent>
-          <FrameWrapper>
-            <GroupWrapper>
-              <FrameInner alt="" src="/group-501.svg" />
-            </GroupWrapper>
-          </FrameWrapper>
-          <FoodpandaParent>
-            <CitiBank1>{`Citi Bank `}</CitiBank1>
-            <Credited>Credited</Credited>
-          </FoodpandaParent>
-        </GroupParent>
-        <Parent2>
-          <Div>- $2,318.75</Div>
-          <Meal>8:30 AM</Meal>
-        </Parent2>
-      </FoodPanda>
-    </CompanySectionRoot>
+    <div className="company-section1">
+      <div className="food-panda1">
+        <div className="frame-parent12">
+          <div className="image-29-container">
+            <img className="image-29-icon1" alt="" src="/image-291@2x.png" />
+          </div>
+          <div className="foodpanda-group">
+            <div className="foodpanda1">Foodpanda</div>
+            <div className="meal1">Meal</div>
+          </div>
+        </div>
+        <div className="parent8">
+          <div className="div15">- $15.85</div>
+          <div className="meal1">10:00 PM</div>
+        </div>
+      </div>
+      <div className="food-panda1">
+        <div className="frame-parent13">
+          <div className="vector-container">
+            <img className="vector-icon4" alt="" src="/vector4.svg" />
+          </div>
+          <div className="foodpanda-group">
+            <div className="foodpanda1">Vodafone</div>
+            <div className="meal1">Phone</div>
+          </div>
+        </div>
+        <div className="parent8">
+          <div className="div15">- $58</div>
+          <div className="meal1">04:13 PM</div>
+        </div>
+      </div>
+      <div className="food-panda1">
+        <div className="frame-parent12">
+          <div className="rectangle-parent9">
+            <div className="frame-child13" />
+            <img className="frame-child14" alt="" src="/group-43.svg" />
+          </div>
+          <div className="foodpanda-group">
+            <div className="foodpanda1">Facebook</div>
+            <div className="meal1">Salary</div>
+          </div>
+        </div>
+        <div className="parent10">
+          <div className="div15">+ $7000</div>
+          <div className="meal1">11:45 AM</div>
+        </div>
+      </div>
+      <div className="food-panda1">
+        <div className="frame-parent13">
+          <div className="image-20-container">
+            <img className="image-20-icon1" alt="" src="/image-201@2x.png" />
+          </div>
+          <div className="foodpanda-group">
+            <div className="foodpanda1">Uber Premier</div>
+            <div className="meal1">Transport</div>
+          </div>
+        </div>
+        <div className="parent8">
+          <div className="div15">- $8.75</div>
+          <div className="meal1">8:30 AM</div>
+        </div>
+      </div>
+      <div className="food-panda1">
+        <div className="group-parent4">
+          <div className="frame-wrapper3">
+            <div className="group-wrapper4">
+              <img className="frame-child15" alt="" src="/group-501.svg" />
+            </div>
+          </div>
+          <div className="foodpanda-group">
+            <div className="citi-bank3">{`Citi Bank `}</div>
+            <div className="credited1">Credited</div>
+          </div>
+        </div>
+        <div className="parent12">
+          <div className="div15">- $2,318.75</div>
+          <div className="meal1">8:30 AM</div>
+        </div>
+      </div>
+    </div>
   );
 };
 

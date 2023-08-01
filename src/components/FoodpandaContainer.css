@@ -1,0 +1,202 @@
+.image-29-icon1 {
+  position: relative;
+  border-radius: 8px;
+  width: 53px;
+  height: 53px;
+  object-fit: cover;
+}
+.image-29-container {
+  border-radius: 8px;
+  background-color: #d70f64;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  align-items: center;
+  justify-content: center;
+}
+.foodpanda1,
+.meal1 {
+  position: relative;
+}
+.meal1 {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-family: Poppins;
+  color: #838690;
+}
+.foodpanda-group,
+.frame-parent12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.frame-parent12 {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.div15 {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.parent8 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  text-align: right;
+  color: #f32323;
+}
+.food-panda1 {
+  align-self: stretch;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.vector-icon4 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.frame-parent13,
+.vector-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.vector-container {
+  border-radius: 8px;
+  background-color: red;
+  padding: 13px;
+  justify-content: center;
+}
+.frame-parent13 {
+  justify-content: flex-start;
+  gap: 13px;
+}
+.frame-child13 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #3b5998;
+}
+.frame-child14 {
+  position: absolute;
+  height: 81.08%;
+  width: 42.11%;
+  top: 18.92%;
+  right: 22.81%;
+  bottom: 0;
+  left: 35.09%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rectangle-parent9 {
+  position: relative;
+  width: 57px;
+  height: 57px;
+}
+.parent10 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  text-align: right;
+  color: #34c98e;
+}
+.image-20-icon1 {
+  position: relative;
+  border-radius: 8px;
+  width: 46px;
+  height: 44px;
+  object-fit: cover;
+}
+.image-20-container {
+  border-radius: 8px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 5px;
+  align-items: center;
+  justify-content: center;
+}
+.frame-child15 {
+  position: relative;
+  width: 30.07px;
+  height: 19.38px;
+}
+.group-wrapper4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #0075cd, #002b67);
+  display: flex;
+  flex-direction: column;
+  padding: 19px 13px;
+  align-items: center;
+  justify-content: center;
+}
+.frame-wrapper3 {
+  position: relative;
+  width: 56.07px;
+  height: 57.38px;
+}
+.citi-bank3 {
+  position: relative;
+  width: 71.6px;
+}
+.citi-bank3,
+.credited1,
+.group-parent4 {
+  display: flex;
+  align-items: center;
+}
+.credited1 {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-family: Poppins;
+  color: #838690;
+  width: 63.05px;
+}
+.group-parent4 {
+  width: 145.34px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.company-section1,
+.parent12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 7px;
+  text-align: right;
+  color: #f32323;
+}
+.company-section1 {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  text-align: left;
+  font-size: 16px;
+  color: #1e253a;
+  font-family: Tomorrow;
+}

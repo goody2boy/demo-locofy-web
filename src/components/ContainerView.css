@@ -1,0 +1,120 @@
+.overview1 {
+  align-self: stretch;
+  position: relative;
+}
+.frame-child12 {
+  width: 205.25px;
+  height: 306px;
+  display: none;
+}
+.available-balance-in,
+.div12,
+.div13,
+.frame-child12 {
+  position: relative;
+}
+.div12,
+.div13 {
+  font-size: 30px;
+}
+.div13 {
+  font-size: 22px;
+}
+.transactions-parent,
+.wallets-parent {
+  height: 52.58px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.transactions-parent {
+  width: 75px;
+  padding: 0.5821533203125px 0 0;
+  box-sizing: border-box;
+  justify-content: flex-end;
+}
+.wallets-parent {
+  width: 42px;
+  justify-content: flex-start;
+}
+.frame-parent11 {
+  width: 159px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.frame-parent10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  z-index: 0;
+}
+.bitcoin-card-child {
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 152.79px);
+  right: -0.25px;
+  width: 205.25px;
+  height: 306px;
+  z-index: 1;
+}
+.bitcoin-card {
+  align-self: stretch;
+  background-color: #4f46ba;
+  display: flex;
+  flex-direction: row;
+  padding: 39px 40px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.overview,
+.wallet-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.wallet-section {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 25px;
+  font-size: 11px;
+}
+.overview {
+  width: 406px;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
+  font-size: 20px;
+  color: #0d1118;
+  font-family: Tomorrow;
+}
+@media screen and (max-width: 1050px) {
+  .overview {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .frame-child12 {
+    display: flex;
+  }
+  .bitcoin-card-child {
+    display: none;
+  }
+  .bitcoin-card {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .wallet-section {
+    flex-direction: column;
+  }
+}

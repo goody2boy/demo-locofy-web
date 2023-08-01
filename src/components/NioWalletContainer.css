@@ -1,0 +1,47 @@
+.div11,
+.nio,
+.niowallet {
+  position: relative;
+  letter-spacing: 0.04em;
+}
+.div11,
+.nio {
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+.nio {
+  color: #777e8a;
+}
+.parent7 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  font-size: 17px;
+}
+.bitcoin-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.nio-wallet {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 37px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: left;
+  font-size: 11px;
+  color: #0d1118;
+  font-family: Tomorrow;
+}
+@media screen and (max-width: 500px) {
+  .nio-wallet {
+    flex: unset;
+    align-self: stretch;
+  }
+}

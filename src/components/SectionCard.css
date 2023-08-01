@@ -1,0 +1,141 @@
+.group-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 7.47px;
+  background-color: #fff;
+  width: 173.26px;
+  height: 146.65px;
+}
+.download-the-locofy {
+  position: absolute;
+  top: 90.08px;
+  left: 31.06px;
+  line-height: 16.84px;
+  color: #5e6a86;
+  display: inline-block;
+  width: 111.14px;
+  height: 41.87px;
+}
+.b,
+.get-locofy-plugin {
+  position: absolute;
+  top: 18.13px;
+  left: 35.81px;
+  font-size: 46.7px;
+  line-height: 46.7px;
+  display: inline-block;
+  width: 101.64px;
+}
+.get-locofy-plugin {
+  top: 68.51px;
+  left: 10.71px;
+  font-size: 13.96px;
+  line-height: 20.21px;
+  text-transform: uppercase;
+  width: 151.84px;
+}
+.rectangle-parent2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 173.26px;
+  height: 146.65px;
+}
+.click-on-the,
+.preview {
+  position: absolute;
+  display: inline-block;
+}
+.click-on-the {
+  top: 89.86px;
+  left: 22.86px;
+  line-height: 16.84px;
+  color: #5e6a86;
+  width: 127.54px;
+  height: 41.87px;
+}
+.preview {
+  top: 69.87px;
+  left: 21.56px;
+  font-size: 13.96px;
+  line-height: 20.21px;
+  text-transform: uppercase;
+  width: 130.15px;
+}
+.play-with-the,
+.rectangle-parent3 {
+  position: absolute;
+  top: 0;
+  left: 370.58px;
+  width: 173.26px;
+  height: 146.65px;
+}
+.play-with-the {
+  top: 90.08px;
+  left: 26.31px;
+  line-height: 16.84px;
+  color: #5e6a86;
+  display: inline-block;
+  width: 120.64px;
+  height: 41.87px;
+}
+.rectangle-parent4,
+.rectangle-parent5,
+.rectangle-parent6 {
+  position: absolute;
+  top: 0;
+  left: 555.88px;
+  width: 173.26px;
+  height: 146.65px;
+}
+.rectangle-parent5,
+.rectangle-parent6 {
+  left: 741.17px;
+}
+.rectangle-parent6 {
+  left: 926.46px;
+}
+.create-a-web,
+.create-project {
+  position: absolute;
+  display: inline-block;
+}
+.create-a-web {
+  top: 90.18px;
+  left: 12.29px;
+  line-height: 16.84px;
+  color: #5e6a86;
+  width: 148.23px;
+  height: 41.87px;
+}
+.create-project {
+  top: 68.51px;
+  left: 20.17px;
+  font-size: 13.96px;
+  line-height: 20.21px;
+  text-transform: uppercase;
+  width: 132.92px;
+}
+.group-wrapper3,
+.instructions-inner,
+.rectangle-parent7 {
+  position: absolute;
+  top: 0;
+  left: 185.29px;
+  width: 173.26px;
+  height: 146.65px;
+}
+.group-wrapper3,
+.instructions-inner {
+  left: 0;
+  width: 1099.72px;
+}
+.instructions-inner {
+  top: 804.53px;
+  left: 8.41px;
+  text-align: center;
+  font-size: 11.55px;
+  color: #457eff;
+  font-family: Roboto;
+}

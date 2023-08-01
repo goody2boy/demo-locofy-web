@@ -1,0 +1,145 @@
+.try-out-this {
+  position: absolute;
+  top: 439.41px;
+  left: 0;
+  font-size: 56.04px;
+  line-height: 74.73px;
+  color: #484f5e;
+}
+.to-experience-this,
+.total-time-5,
+.we-took-a {
+  position: absolute;
+  line-height: 27.09px;
+  display: inline-block;
+}
+.we-took-a {
+  top: 519.42px;
+  left: 5.02px;
+  width: 736.1px;
+}
+.to-experience-this,
+.total-time-5 {
+  width: 668.56px;
+}
+.to-experience-this {
+  top: 761.87px;
+  left: 8.41px;
+  font-weight: 600;
+}
+.total-time-5 {
+  top: 0;
+  left: 36.43px;
+}
+.group-child {
+  position: absolute;
+  top: 0.15px;
+  left: 0;
+  width: 27.09px;
+  height: 27.09px;
+}
+.total-time-5-to-7-minutes-parent {
+  position: absolute;
+  top: 968.77px;
+  left: 8.41px;
+  width: 704.99px;
+  height: 28px;
+}
+.guide-guy-icon {
+  position: absolute;
+  top: 266.36px;
+  left: calc(50% + 415.07px);
+  width: 178.29px;
+  height: 162.73px;
+}
+.group-icon4 {
+  position: absolute;
+  height: 36.72%;
+  width: 27.54%;
+  top: 31.64%;
+  right: 33.59%;
+  bottom: 31.64%;
+  left: 38.87%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.video-child {
+  position: absolute;
+  height: 82.15%;
+  width: 82.15%;
+  top: 9.51%;
+  right: 9.28%;
+  bottom: 8.33%;
+  left: 8.56%;
+  border-radius: 5.78px;
+  border: 1.4px solid #457eff;
+  box-sizing: border-box;
+}
+.video {
+  position: relative;
+  width: 31.14px;
+  height: 31.14px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.watch-video-figma {
+  position: relative;
+  text-decoration: underline;
+  line-height: 27.25px;
+  font-weight: 700;
+  color: inherit;
+}
+.video-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 9.14px;
+}
+.frame-icon1,
+.frame-wrapper {
+  position: relative;
+  width: 422.28px;
+  height: 31.14px;
+}
+.frame-icon1 {
+  width: 31.13px;
+  height: 31.13px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-wrapper1,
+.group-div {
+  position: relative;
+  width: 385.28px;
+  height: 31.13px;
+}
+.frame-wrapper1 {
+  width: 433.28px;
+}
+.group-parent {
+  position: absolute;
+  top: 589.23px;
+  left: 1.93px;
+  width: 433px;
+  height: 119.39px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12.99px;
+  color: #457eff;
+}
+.instructions {
+  position: relative;
+  width: 100%;
+  height: 996.77px;
+  text-align: left;
+  font-size: 18.68px;
+  color: #485269;
+  font-family: Roboto;
+}
